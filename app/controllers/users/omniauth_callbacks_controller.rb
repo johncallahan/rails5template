@@ -18,7 +18,7 @@ module Users
     end
 
     def keycloakopenid
-      handle_auth "MyVeridium"
+      handle_auth "Keycloak"
     end
 
     private

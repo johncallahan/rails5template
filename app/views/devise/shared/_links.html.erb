@@ -28,7 +28,7 @@
     <% when :twitter %>
       <%= link_to "Sign in with #{OmniAuth::Utils.camelize(provider)}", omniauth_authorize_path(resource_name, provider) %><br />
     <% when :keycloakopenid %>
-      <%= link_to "Sign in with MyVeridium", omniauth_authorize_path(resource_name, provider) %><br />
+      <%= link_to "Sign in with #{OmniAuth::Utils.camelize(provider)}", omniauth_authorize_path(resource_name, provider) %><br />
     <% end %>
   <% end -%>
 <% end -%>
