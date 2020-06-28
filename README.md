@@ -32,9 +32,30 @@ configure mailcatcher
 
 Requires postgres, elasticsearch, sendgrid and redis
 
+% heroku create
+% heroku addons:create heroku-postgresql:hobby-dev
+% heroku addons:create heroku-redis:hobby-dev
+% heroku addons:create sendgrid:starter
+% heroku addons:create bonsai:sandbox-6
+% heroku config:set RAILS_MASTER_KEY=????
+
 HOST_FOR_EMAIL
+
+Make sure ...
+
 SENDGRID_USERNAME
 SENDGRID_PASSWORD
+
+copy BONSAI_URL to ELASTICSEARCH_URL
+
+% git push heroku master
+% heroku run rake db:migrate
+% heroku run rake db:seed (maybe errors )
+% heroku run rake searchkick:reindex:all
+
+Sign-up a user
+
+
 
 # Adding omniauth providers
 
