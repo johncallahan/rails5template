@@ -30,7 +30,7 @@ configure mailcatcher
 
 # Heroku Deployment - need Heroku button
 
-Requires postgres, elasticsearch, sendgrid and redis
+Requires postgres, elasticsearch and redis with SMTP
 
 % heroku create
 % heroku addons:create heroku-postgresql:hobby-dev
@@ -39,12 +39,13 @@ Requires postgres, elasticsearch, sendgrid and redis
 % heroku addons:create bonsai:sandbox-6
 % heroku config:set RAILS_MASTER_KEY=????
 
-HOST_FOR_EMAIL
+APP_URL=https://yourapp.herokuapp.com/
+SMTP_HOST=smtp.example.com
+SMTP_PORT=587
+SMTP_USERNAME=admin@example.com
+SMTP_PASSWORD=????
+SMTP_DOMAIN=example.com
 
-Make sure ...
-
-SENDGRID_USERNAME
-SENDGRID_PASSWORD
 
 copy BONSAI_URL to ELASTICSEARCH_URL
 

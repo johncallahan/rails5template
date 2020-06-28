@@ -70,17 +70,16 @@ Rails.application.configure do
   # config.active_job.queue_name_prefix = "aggregations_#{Rails.env}"
 
   config.action_mailer.raise_delivery_errors = true
-  config.action_mailer.default_url_options = { host: ENV["HOST_FOR_EMAIL"] }
+  config.action_mailer.default_url_options = { host: ENV["APP_URL"] }
   config.action_mailer.perform_caching = false
   ActionMailer::Base.delivery_method = :smtp
   ActionMailer::Base.smtp_settings = {
-    :user_name => ENV['SENDGRID_USERNAME'],
-    :password => ENV['SENDGRID_PASSWORD'],
-    :domain => 'yourdomain.com',
-    :address => 'smtp.sendgrid.net',
-    :port => 587,
+    :address        => ENV['SMTP_HOST'],
+    :port           => ENV['SMTP_PORT'],
     :authentication => :plain,
-    :enable_starttls_auto => true
+    :user_name      => ENV['SMTP_USERNAME'],
+    :password       => ENV['SMTP_PASSWORD'],
+    :domain         => ENV['SMTP_DOMAIN']
   }
 
   # Ignore bad email addresses and do not raise email delivery errors.
