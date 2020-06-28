@@ -45,6 +45,7 @@ SMTP_PORT=587
 SMTP_USERNAME=admin@example.com
 SMTP_PASSWORD=????
 SMTP_DOMAIN=example.com
+SMTP_SENDER=from@example.com
 
 
 copy BONSAI_URL to ELASTICSEARCH_URL
