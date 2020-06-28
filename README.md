@@ -18,7 +18,7 @@ You must create a ...
 
 Requires postgres, elasticsearch, sidekiq and redis
 
-% bundle exec sidekiq -q mailers
+% bundle exec sidekiq -c 2 -q mailers
 
 # Heroku Deployment
 
