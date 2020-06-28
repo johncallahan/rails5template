@@ -1,24 +1,31 @@
-# README
+# Basic project for Rails5 app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A starter project with:
 
-Things you may want to cover:
+* Multi-facted search via searchkick gem 
+* ActiveStorage (uploads to AWS S3, Azure Blob, etc.)
+* Devise (with omniauth)
+* Sidekiq for workers
+* Postgres database is default
 
-* Ruby version
+# Credentials
 
-* System dependencies
+You must create a ...
 
-* Configuration
+% EDITOR=nano rails credentials:edit
 
-* Database creation
+# Local development
 
-* Database initialization
+Requires postgres, elasticsearch, sidekiq and redis
 
-* How to run the test suite
+% bundle exec sidekiq -q mailers
 
-* Services (job queues, cache servers, search engines, etc.)
+# Heroku Deployment
 
-* Deployment instructions
+Requires postgres, elasticsearch, sidekiq and redis
 
-* ...
+# Adding omniauth providers
+
+
+# Adding ActiveStorage providers
+
