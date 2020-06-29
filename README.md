@@ -81,4 +81,6 @@ Loading development environment (Rails 5.2.1)
 2.5.1 :002 > quit
 % 
 
+# Sidekiq
 
+https://localhost:3000/sidekiq/ (as an admin)
