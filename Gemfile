@@ -23,6 +23,9 @@ gem "actionview", ">= 5.2.4.3"
 gem "administrate", ">= 0.13.0"
 gem "devise", ">= 4.7.1"
 gem "mini_magick", "~> 4.9.4"
+gem "json-jwt", ">= 1.11.0"
+gem "bootstrap", ">= 4.3.1"
+#gem "omniauth-keycloak"
 
 # Use CoffeeScript for .coffee assets and views
 gem "coffee-rails", "~> 4.2"
@@ -69,7 +72,6 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 #gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-gem "bootstrap", ">= 4.3.1"
 gem "data-confirm-modal", "~> 1.6", ">= 1.6.2"
 gem "devise-bootstrapped", github: "excid3/devise-bootstrapped", branch: "bootstrap4"
 gem "devise_masquerade", "~> 0.6.2"
@@ -81,7 +83,6 @@ gem "gravatar_image_tag", github: "mdeering/gravatar_image_tag"
 gem "jquery-rails", "~> 4.3.1"
 gem "local_time", "~> 2.0", ">= 2.0.1"
 gem "name_of_person", "~> 1.0"
-gem "omniauth-keycloak"
 gem "omniauth-facebook", "~> 5.0"
 gem "omniauth-github", "~> 1.3"
 gem "omniauth-twitter", "~> 1.4"
