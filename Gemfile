@@ -74,7 +74,7 @@ end
 
 gem "data-confirm-modal", "~> 1.6", ">= 1.6.2"
 gem "devise-bootstrapped", github: "excid3/devise-bootstrapped", branch: "bootstrap4"
-gem "devise_masquerade", "~> 0.6.2"
+gem "devise_masquerade", "~> 1.3.1"
 gem 'devise-async'
 gem "font-awesome-sass", "~> 5.0", ">= 5.0.13"
 gem "foreman", "~> 0.84.0"
